@@ -1,0 +1,5 @@
+# CraftyNest — robots.txt
+User-agent: *
+Allow: /
+
+Sitemap: https://diy.bilalmania.com/sitemap.xml
