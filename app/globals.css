@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Light theme only: article pages must stay readable and print-friendly. */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Article links inside rendered paragraphs. */
+article a {
+  color: #92400e;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+article a:hover {
+  color: #78350f;
+}
